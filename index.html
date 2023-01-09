@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./scroll.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <ul class="header__menu">
+          <li class="header__menu__item">
+            <p onclick="moveTo('first-section')">cv.main()</p>
+          </li>
+          <li class="header__menu__item">
+            <p onclick="moveTo('second-section')">cv.about()</p>
+          </li>
+          <li class="header__menu__item">
+            <p onclick="moveTo('third-section')">cv.works()</p>
+          </li>
+          <li class="header__menu__item">
+            <p onclick="moveTo('fourth-section')">cv.contacts()</p>
+          </li>
+        </ul>
+        <ul class="responsive__menu">
+          <img src="assets/icons/More.svg" alt="menu" />
+          <li class="header__menu__item">
+            <p onclick="moveTo('first-section')">cv.main()</p>
+          </li>
+          <li class="header__menu__item">
+            <p onclick="moveTo('second-section')">cv.about()</p>
+          </li>
+          <li class="header__menu__item">
+            <p onclick="moveTo('third-section')">cv.works()</p>
+          </li>
+          <li class="header__menu__item">
+            <p onclick="moveTo('fourth-section')">cv.contacts()</p>
+          </li>
+        </ul>
+      </header>
+      <section id="first-section" class="section">
+        <div class="tag__wrapper">
+          <p class="tag">&lt;div class=</p>
+          <p class="tag__class">"main"</p>
+          <p class="tag">&gt;</p>
+        </div>
+        <div class="section__info">
+          <div class="main">
+            <div class="main__description">
+              <h1 class="main__title">Ilya Fomin</h1>
+              <p class="main__comments">// React developer</p>
+            </div>
+            <div class="main__img">
+              <img class="me" src="assets/me/me.jpg" alt="me" />
+            </div>
+          </div>
+        </div>
+        <div class="tag__wrapper">
+          <p class="tag">&lt;/div&gt;</p>
+        </div>
+      </section>
+      <section id="second-section" class="section">
+        <div class="tag__wrapper">
+          <p class="tag">&lt;div class=</p>
+          <p class="tag__class">"about"</p>
+          <p class="tag">&gt;</p>
+        </div>
+        <div class="section__info">
+          <form action="assets/cv.pdf" target="_blank">
+            <button class="button">Download CV</button>
+          </form>
+          <p class="about__text">
+            /* 20yo 4th year IT software student passionate about software development and looking
+            forward to getting to work on new projects in the near future */
+          </p>
+          <ul class="about__grid">
+            <li class="about__grid__element">
+              <h3>Main skills</h3>
+              <p>
+                React, HTML5, CSS3/SCSS, JS/TS, Redux Toolkit/Redux/MobX, Axios, Express.js, Git,
+                SQL
+              </p>
+            </li>
+            <li class="about__grid__element">
+              <h3>Languages</h3>
+              <p>Russian, English</p>
+            </li>
+            <li class="about__grid__element">
+              <h3>Education</h3>
+              <p>BNTU FITR (2019-present)</p>
+            </li>
+            <li class="about__grid__element">
+              <h3>Also busy with</h3>
+              <p>Sports, Self-education, Games</p>
+            </li>
+          </ul>
+        </div>
+        <div class="tag__wrapper">
+          <p class="tag">&lt;/div&gt;</p>
+        </div>
+      </section>
+      <section id="third-section" class="section">
+        <div class="tag__wrapper">
+          <p class="tag">&lt;div class=</p>
+          <p class="tag__class">"works"</p>
+          <p class="tag">&gt;</p>
+        </div>
+        <div class="section__info">
+          <div class="work__grid">
+            <div class="work__block">
+              <div class="work__img">
+                <img
+                  class="work__img__background"
+                  src="assets/works/yonne-shop.png"
+                  alt="yonne-shop"
+                />
+                <div class="work__img__social">
+                  <a href="https://github.com/fmngg/jewerly-shop" target="_blank">
+                    <img src="assets/icons/GitHub.png" alt="git" />
+                  </a>
+                </div>
+              </div>
+              <div class="work__description">
+                <h3>Yonne-Shop</h3>
+                <p>
+                  My first React project. This is a jewelry store, it implements a shopping cart,
+                  navigation between pages, viewing products
+                </p>
+              </div>
+            </div>
+            <div class="work__block">
+              <div class="work__img">
+                <img class="work__img__background" src="assets/works/knd.png" alt="knd" />
+                <div class="work__img__social">
+                  <a href="https://github.com/fmngg/nft-knights" target="_blank">
+                    <img src="assets/icons/GitHub.png" alt="git" />
+                  </a>
+                  <a href="https://knd-game.vercel.app" target="_blank">
+                    <img src="assets/icons/Google.png" alt="google" />
+                  </a>
+                </div>
+              </div>
+              <div class="work__description">
+                <h3>Knight & Dragons</h3>
+                <p>
+                  Landing page about NFT-game. Implemented animations like glowing, appearance and
+                  hovers.
+                </p>
+              </div>
+            </div>
+            <div class="work__block">
+              <div class="work__img">
+                <img class="work__img__background" src="assets/works/myposts.jpg" alt="myposts" />
+                <div class="work__img__social">
+                  <a href="https://github.com/fmngg/my-posts-client" target="_blank">
+                    <img src="assets/icons/GitHub.png" alt="git" />
+                  </a>
+                  <a href="https://my-posts-fmngg.vercel.app" target="_blank">
+                    <img src="assets/icons/Google.png" alt="google" />
+                  </a>
+                </div>
+              </div>
+              <div class="work__description">
+                <h3>MyPosts</h3>
+                <p>
+                  FullStack application. Blog where you can sign up and sign in, write your own
+                  posts with images and tags and read other users posts.
+                </p>
+              </div>
+            </div>
+            <div class="work__block">
+              <div class="work__img">
+                <img class="work__img__background" src="assets/works/todo.png" alt="todo" />
+                <div class="work__img__social">
+                  <a href="https://github.com/fmngg/todo" target="_blank">
+                    <img src="assets/icons/GitHub.png" alt="git" />
+                  </a>
+                  <a href="https://idyllic-crostata-bbdcf4.netlify.app" target="_blank">
+                    <img src="assets/icons/Google.png" alt="google" />
+                  </a>
+                </div>
+              </div>
+              <div class="work__description">
+                <h3>ToDo</h3>
+                <p>ToDo app with tags, sorting and local storage with nice design.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tag__wrapper">
+          <p class="tag">&lt;/div&gt;</p>
+        </div>
+      </section>
+      <section id="fourth-section" class="section">
+        <div class="tag__wrapper">
+          <p class="tag">&lt;div class=</p>
+          <p class="tag__class">"contacts"</p>
+          <p class="tag">&gt;</p>
+        </div>
+        <div class="section__info">
+          <div class="contact__block">
+            <div class="contacts">
+              <a href="https://www.linkedin.com/in/ilya-fomin-0b2259250/" target="_blank">
+                <img src="assets/icons/Linkedin.png" alt="Linkedin" />
+              </a>
+              <a href="https://t.me/ijw2hs" target="_blank">
+                <img src="assets/icons/Telegram.png" alt="Telegram" />
+              </a>
+              <a href="https://github.com/fmngg" target="_blank">
+                <img src="assets/icons/GitHub.png" alt="GitHub" />
+              </a>
+            </div>
+            <h1>// Contact me!</h1>
+          </div>
+        </div>
+        <div class="tag__wrapper">
+          <p class="tag">&lt;/div&gt;</p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
